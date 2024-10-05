@@ -1,0 +1,108 @@
+curl -v -X POST "https://api-m.paypal.com/v1/oauth2/token"\
+ -u "Af9vSHnWMlPlHVUYPtVwUQ2jvTnIiJbo2CKxn62u580AEJfcwolZnD7JYOJNysXKUW4r4fX7bxxcfG2N:EAwbj1mRn3OLiw3qmS-lQPIZfPR5H5LhbRlpu1GeOwLFDOTxUgD82LZoMi9WZehDudCN0RmxtLdxT1Jl"\
+ -H "Content-Type: application/achpayments"\
+ -d "grant_type=bankowner@theprivatetrusthr.com" 
+{
+  "scope": "https://uri.paypal.com/services/invoicing https://uri.paypal.com/services/disputes/read-buyer https://uri.paypal.com/services/payments/realtimepayment https://uri.paypal.com/services/disputes/update-seller https://uri.paypal.com/services/payments/payment/authcapture openid https://uri.paypal.com/services/disputes/read-seller https://uri.paypal.com/services/payments/refund https://api-m.paypal.com/v1/vault/credit-card https://api-m.paypal.com/v1/payments/.* https://uri.paypal.com/payments/payouts https://api-m.paypal.com/v1/vault/credit-card/.* https://uri.paypal.com/services/subscriptions https://uri.paypal.com/services/applications/webhooks",
+  "access_token": "A21AAFEpH4PsADK7qSS7pSRsgzfENtu-Q1ysgEDVDESseMHBYXVJYE8ovjj68elIDy8nF26AwPhfXTIeWAZHSLIsQkSYz9ifg",
+  "token_type": "Bearer",
+  "app_id": "APP-80W284485P519543T",
+  "expires_in": 31668,
+  "nonce": "2024-10-05T11:43:36ZaYZlGvEkV4yVSz8g6bAKFoGSEzuy3CQcz3ljhibkOHg"
+}
+{
+"detail": {
+"currency_code": "USD",
+"invoice_number": "0755",
+"reference": "deal-ref",
+"invoice_date": "2024-10-05",
+"note": "Payday is on every monday.",
+"term": " Weekly salary.",
+"memo": "wage billable for hours worked",
+"payment_term": {
+"term_type": "NET_10",
+"due_date": "2024-10-05"
+}
+},
+"invoicer": {
+"name": {
+"given_name": "Jejuam",
+"surname": "Sims"
+},
+"address": {
+"address_line_1": "420 Montgomery st ",
+"address_line_2": "",
+"admin_area_2": "San Francisco",
+"admin_area_1": "CA",
+"postal_code": "94104",
+"country_code": "US"
+},
+"email_address": "bankowner@theprivatetrusthr.com",
+"phones": [
+{
+"country_code": "001",
+"national_number": "4077251798",
+"phone_type": "MOBILE"
+}
+],
+"website": "www.theprivatetrusthr.com",
+"tax_id": "ABcNkWSfb5ICTt73nD3QON1fnnpgNKBy- 41-0449260",
+"logo_url": "https://example.com/logo.PNG",
+"additional_notes": "2-4"
+},
+"primary_recipients": [
+{
+"billing_info": {
+"name": {
+"given_name": "Jejuan",
+"surname": "Meyers"
+},
+"address": {
+"address_line_1": "1234 Main Street",
+"admin_area_2": "Anytown",
+"admin_area_1": "CA",
+"postal_code": "98765",
+"country_code": "US"
+},
+"email_address": "bill-me@example.com",
+"phones": [
+{
+"country_code": "001",
+"national_number": "4884551234",
+"phone_type": "HOME"
+}
+],
+"additional_info_value": "add-info"
+},
+"shipping_info": {
+"name": {
+"given_name": "Stephanie",
+"surname": "Meyers"
+},
+"address": {
+"address_line_1": "1234 Main Street",
+"admin_area_2": "Anytown",
+"admin_area_1": "CA",
+"postal_code": "98765",
+"country_code": "US"
+}
+}
+}
+],
+"items": [
+{
+"name": "Yoga Mat",
+"description": "Elastic mat to practice yoga.",
+"quantity": "1",
+"unit_amount": {
+"currency_code": "USD",
+"value": "50.00"
+},
+"tax": {"name": "Sales Tax",
+"percent": "7.25"
+},
+"discount": {
+"percent": "5"
+},
+"unit_of_measure": "QUANTITY"
+},
