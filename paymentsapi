@@ -16,7 +16,7 @@ curl -v -X POST "https://api-m.paypal.com/v1/oauth2/token"\
 "invoice_number": "0001",
 "reference": "deal-ref",
 "invoice_date": "2024-10-05",
-"note": "Payday is on every monday.",
+"note": "Corporate actions are issued every month.",
 "term": " Monthly.",
 "memo": "Every month on the 1st, 15th or 30th",
 "payment_term": {
